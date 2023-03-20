@@ -1,154 +1,993 @@
-<!DOCTYPE html>
 <html>
 <head>
-
-  <meta charset="UTF-8">
-  <meta name="author" content="Boris Sehovac">
-  <meta name="description" content="See if you can solve this classic puzzle game.">
-  <meta name="viewport" content="width=device-width,height=device-height,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
-
-  <title>The Cube - A Rubik's Cube Game</title>
-  <meta property="og:description" content="See if you can solve this classic puzzle game."/>
-  <meta property="og:image" content="assets/icons/meta-image.png"/>
-  <meta property="og:site_name" content="The Cube - A Rubik's Cube Game"/>
-  <meta property="og:title" content="The Cube - A Rubik's Cube Game"/>
-  <meta property="og:type" content="website"/>
-  <meta property="og:url" content="https://bsehovac.github.io"/>
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:creator" content="@BorisSehovac">
-  <meta name="twitter:title" content="The Cube - A Rubik's Cube Game">
-  <meta name="twitter:image" content="https://bsehovac.github.io/the-cube/assets/icons/twitter-card.png">
-  <meta name="twitter:description" content="See if you can solve this classic puzzle game.">
-
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-title" content="The Cube">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="translucent-black">
-
-  <link rel="apple-touch-icon" sizes="180x180" href="D:\MOKSH\RUBIK's cube\the-cube-master\assets/icons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="D:\MOKSH\RUBIK's cube\the-cube-master\assets/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="D:\MOKSH\RUBIK's cube\the-cube-master\assets/icons/favicon-16x16.png">
-  <link rel="manifest" href="D:\MOKSH\RUBIK's cube\the-cube-masterassets/icons/site.webmanifest">
-  <link rel="mask-icon" href="D:\MOKSH\RUBIK's cube\the-cube-master\assets/icons/safari-pinned-tab.svg" color="#5bbad5">
-  <link rel="shortcut icon" href="D:\MOKSH\RUBIK's cube\the-cube-master\assets/icons/favicon.ico">
-  <meta name="theme-color" content="#ffffff">
-
-  <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128627708-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-128627708-1');
-  </script>
-
-  <script>
-    window.gameVersion = '0.99.2';
-  </script>
-
-</head>
+    <title>Solve Your Rubik</title>
+    <link rel="stylesheet" href="style 55.css" type="text/css">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 <body>
+<font size="6">
+    <u><h1 align="center"><font face="showcard gothic">YOU CAN DO <font color="purple">
+    THE </font><font color="#2200ff">R</font><font color="yellow">U</font><font color="red">B</font><font color="#00ff48">I</font><font color="#e3b4b9">K</font><font color="black">'</font><font color="orange">S</font> CUBE</font></h1></u>
+<br><br>
+<font size="6" face="gadugi">
+    By following this guide you can :<br><br><br><br>
+    <center>
+    <img src="img-unsolved.png" height="300" width="350" align="center"><br>
+    <img src="arrow.png" height="100" width="150" align="center"><br>
+<img src="img-solved.png" height="300" width="350" align="center">
+</center></font>
+<font size="6" face="gadugi">
+<ul type="disc">
+<li>You will be learning the <b>Layer Method</b> to solve your Rubik's Cube.<br><br></li>
+<li>The Gray Area on the Rubik's Cube mean that at the stage you are working on, the color of the gray pieces doesn't matter.<br><br></li>
+</ul>
+<h4><font color="#421bc3"><u>GET TO KNOW YOUR RUBIK'S CUBE (1st Part)</u></font></h4>
+<ul type="disc">
+ <center><li><font size="6" face="gadugi"><b><u>Layer</u></b></font></li></center>
+<p><center><font face="gadugi">There are three horizontal layers in a 3X3 Rubik's Cube.<br><br>
+Using this guide, you will solve the Rubik's Cube layer by layer.<br><br></font></center></p>
+<center>
+<img src="layer.png" height="300" width="350"><figcaption><b>Top Layer</b></figcaption><br><br>
+<img src="layer 2.png" height="300" width="350"><figcaption><b>Middle Layer</b></figcaption>
+<img src="layer 3.png" height="300" width="350"><figcaption><b>Bottom Layer</b></figcaption><br><br><br>
+</center>
+<center><li><font size="6" face="gadugi"><b><u>Face</u></b></font></li></center>
+<p><center><font face="gadugi">Each flat surface is a face.</font></center></p>
+<p><center><font face="gadugi">There are 6 faces on a Rubik's Cube.</font></center></p>
+<center><div class="wrapper">
+ <div class="cube-box">
+<img src="face-blue.png" height="300" width="350">
+<img src="face-orange.png" height="300" width="350">
+<img src="face-green.png" height="300" width="350">
+<img src="face_red.png" height="300" width="350">
+<img src="face-white.png" height="300" width="350">
+<img src="face-yellow.png" height="300" width="350">
+</div>
+</div></center><br><br><br><br>
+<center><li><font size="6" face="gadugi"><b><u>Centers</u></b></font></li></center>
+<p><center><font face="gadugi">Center pieces have one coloured tile.</font></center></p>
+<p align="center"><font face="gadugi">There are 6 center pieces.</font></p>
+<p align="center"><font face="gadugi">Center pieces are single tiles, fixed to<br>
+the internal core.</font></p>
+<p align="center"><font face="gadugi">When correctly solved, each face will<br>
+be the color of its center piece.</font></p>
+<center>
+<div class="wrapper">
+<div class="cube-box">
+<img src="center-blue.png" height="300" width="350">
+<img src="center-orange.png" height="300" width="350">
+<img src="center-green.png" height="300" width="350">
+<img src="center-red.png" height="300" width="350">
+<img src="center-white.png" height="300" width="350">
+<img src="center-yellow.png" height="300" width="350">
+</div>
+</div>
+</center><br><br><br>
+<p align="center">You use one finger to touch a CENTER piece.</p><br>
+<p align="center"><font face="gadugi">These center pieces colors<br>
+ are always opposite each other, as shown in the above animation.</font></p>
+ <center><li><font size="6" face="gadugi"><b><u>Edges</u></b></font></li>
+<p align="center"><font face="gadugi">Edge pieces have two coloured tiles.</font></p>
+<p align="center">There are 12 edge pieces.</p>
+<center>
+<div class="wrapper">
+<div class="cube-box">
+<img src="edge-blue.png" height="300" width="350">
+<img src="edge-orange.png" height="300" width="350">
+<img src="edge-green.png" height="300" width="350">
+<img src="edge-red.png" height="300" width="350">
+<img src="edge-white.png" height="300" width="350">
+<img src="edge-yellow.png" height="300" width="350">
+</div>
+</div>              
+</center><br><br><br>
+<p align="center">You use two fingers to pinch an EDGE piece.</p>
+<center><li><font size="6" face="gadugi"><b><u>Corners</u></b></font></li></center></ul>
+<p align="center"><font face="gadugi">Corner pieces have three coloured tiles.</font></p>
+<p align="center"><font face="gadugi">There are 8 corner pieces.</font></p>
+<center>
+ <div class="wrapper">
+<div class="cube-box">
+<img src="corner-blue.png" height="300" width="350">
+<img src="corner-orange.png" height="300" width="350">
+<img src="corner-green.png" height="300" width="350">
+<img src="corner-red.png" height="300" width="350">
+<img src="corner-white.png" height="300" width="350">
+<img src="corner-yellow.png" height="300" width="350">
+ </div>
+</div>              
+</center><br><br><br>
+<p align="center">You use three fingers to touch all sides of a CORNER piece.</p>
+<h4><font color="#421bc3"><u>GET TO KNOW YOUR RUBIK'S CUBE (2nd Part)</u></font></h4><br><br>
+<ul type="disc">
+<li><p align="justify">U = Up Face
+<img src="U'.png" align="right" height="300" width="300">
+<img src="U.png" align="right" height="300" width="300"></p><br><br><br><br><br></li>
+<li><p align="justify">D = Down
+<img src="D'.png" align="right" height="300" width="300">
+<img src="D.png" align="right" height="300" width="300"></p><br><br><br><br><br></li>
+<li><p align="justify">L =Left Face
+<img src="L'.png" align="right" height="300" width="300">
+<img src="L.png" align="right" height="300" width="300"></p><br><br><br><br><br></li>
+<li><p align="justify">R = Right Face
+<img src="R'.png" height="300" width="300" align="right">
+<img src="R.png" align="right" height="300" width="300"></p><br><br><br><br><br></li>
+<li><p align="justify">F = Front Face
+<img src="F'.png" height="300" width="300" align="right">
+<img src="F.png" height="300" width="300" align="right"></p><br><br><br><br><br></li>
+<font size="11"><li><p align="justify"></font>B = Back Face
+<img src="B'.png" height="300" width="300" align="right">
+<img src="B.png" height="300" width="300" align="right"></p></li></ul><br><br><br><br><br>
+<p align="right"><font size="5">At the back face of your cube.</font></p>
+<h4><font color="#421bc3"><u>GET TO KNOW YOUR RUBIK'S CUBE (3rd Part)</u></font></h4><br><br>
+<ul type="disc">
+<li><p>Each move is a <sup>1</sup>/<sub>4</sub> <b>TURN</b>.</li>
+<li><p>An <b>ALGORITHM</b> is a sequence of moves that you need to do in a specific order.</p></li>
+<li><p>When following the algorithms in this guide, it is important to maintain the <b>FRONT</b>
+ face of your Rubik's Cube so it stays the <b>FRONT</b> through all of the turns.</p></li>
+<li>If there is a <b>2</b> next to the algorithm letter, turn the face twice.<br></li>
+<img src="2.png" height="300" width="300"><img src="ARROW RIGHT.png" height="100" width="250">
+<img src="D.png" height="300" width="300"><img src="D.png" height="300" width="300">
+<li>A turn is a clockwise when looking at that face directly. A letter with an apostrophe(')
+after it means to make an inverse or counterclockwise turn of the face.</li><br><br><br>
+</ul>
+<p style="background-color: #0d00ff;
+border: 2px solid gray;" align="left"><font face="gadugi" size="10"><strong> SOLVE LAYER ONE</strong></font></p><br>
+<p style="background-color: #604bf9;
+border: 2px solid gray;" align="left"><font face="showcard gothic" size="10"></font>STEP 1: CREATE A WHITE CROSS</font></p>
+<font size="6">
+<ul type="disc">
+<li>Hold your cube with the <b>yellow center</b> piece on the <b>UP (U)</b> face.<br></li>
+</ul>
+<img src="center-yellow.png" height="300" width="300">
+<figcaption>UP FACE</figcaption>
+<hr size="20" noshade color="#0c00ff">
+<br><br><br>
+<p style="background-color: #81dde3;
+border: 2px solid gray;">
+Action 1
+</p>
+<p>
+Look at the top layer to locate the
+EDGE pieces that have a WHITE        <img src="pg 12.1.png" height="250" width="250" align="right">
+tile. Leave them where they are.<br><br>
+See example to the right and
+notice that at this stage it is okay
+if the white tile is not touching
+the <b>YELLOW CENTER</b> piece.</p>
+<hr size="20" noshade color="#0c00ff">
+<br><br><br>
+<p style="background-color: #81dde3;
+border: 2px solid gray;">
+Action 2
+</p>
+<p>
+Look at the middle layer.Move EDGE <br>
+pieces that have a WHITE tile from <br><img src="pg 12.2.png" height="300" width="300" align="right">
+the MIDDLE layer into the top layer.</p> <br>
+<hr noshade width="600px" height="100px" align="center">
+<h3 align="left"><font color="##36e700">TIP</font></h3><br>
+<p align="left">Be careful not to bump
+out the white edges<br>
+already in the cross.</p>
+<img src="pg 13.1.png" height="300" width="300" align="right">
+<p align="left">Rotate the <b>UP (U)</b> face to
+move a white<br> edge out of
+the way before moving
+another<br> white edge into
+the cross.
+</p>
+<p align="left">For example, as shown in the right figure.<br>
+Then follow the following algorithm.</p>
+<img src="U'.png" height="150" width="150"><img src="F'.png" height="150" width="150">
+<hr size="20" noshade color="#0c00ff">
+<br><br><br>
+<p style="background-color: #81dde3;
+border: 2px solid gray;">
+Action 3
+</p>
+<p align="left">
+Look at the bottom layer.
+Move <b>EDGE</b><br> pieces that
+have a <b>WHITE</b> tile from<br>
+<img src="pg 13.2.png" height="300" width="300" align="right">
+<figcaption>(Front Face is that face <br>where the arrow is indicated.)</figcaption><br><br>
+the <b>BOTTOM</b> layer into
+the top layer,  then follow the following algorithm.<br>
+<img src="F.png" height="150" width="150">
+<img src="F.png" height="150" width="150">
+</p>
+<p align="left"><i>Don't forget the previous tip.</i></p>
+<hr noshade width="600px" height="100px" align="center">
+<h3 align="left"><font color="#36e700">TIP</font></h3><br>
+<p align="left">Sometimes, when you place
+the edge<br> in the top layer, the
+WHITE tile is not<br> on the UP face
+and it needs to be “flipped”.</p>
+<p style="background-color: #81dde3;
+border: 2px solid gray;">
+Holding Your Rubik's Cube.</p>
+<p align="left">
+To “flip the edge,” so the <b>White</b>
+tile<br> is on the <b>UP</b> face, hold your
+<img src="pg 14.1.png" height="300" width="300" align="right">
+Rubik’s<br> Cube so the edge that
+needs to be<br> flipped is on the
+<b>RIGHT (R)</b> face.
+</p>
+<p align="left">
+Follow this algorithm.
+</p><br>
+<img src="R'.png" height="150" width="150">
+<img src="U.png" height="150" width="150">
+<img src="F'.png" height="150" width="150"><br><br>
+<p style="background-color: #0d00ff;
+border: 2px solid gray;" align="left"><b>
+<font color="white"><br>
+When your Rubik's Cube has a white cross 
+that looks like the following animation, you can move
+to Step 2.</font></b><br><br></p><br><br>
+<center><div class="wrapper">
+<div class="cube-box">
+<img src="center-blue.png" height="300" width="350">
+<img src="center-orange.png" height="300" width="350">
+<img src="center-green.png" height="300" width="350">
+<img src="center-red.png" height="300" width="350">
+<img src="white cross.png" height="300" width="350">
+<img src="center-white.png" height="300" width="350">
+</div>
+</div></center>
+<br><br><br><br>
 
-  <div class="ui">
+<hr noshade size="20" color="#0c00ff">
+<br><br><br>
+<p style="background-color: #0d00ff;
+border: 2px solid gray;" align="left"><font face="gadugi" size="10"><strong> SOLVE LAYER ONE</strong></font></p><br>
+<p style="background-color: #604bf9;
+border: 2px solid gray;" align="left"><font face="showcard gothic" size="10"></font>STEP 2: CREATE A WHITE CROSS WITH MATCHED EDGES AND CENTER PIECES</font></p>
+<font size="6"><font size="6">
+<font size="10">
+<ul type="disc">
+<li></font>Holding your Rubik’s Cube with the White Cross on the <b>UP (U)</b> face. Look at the <b>FRONT</b> face of the Rubik’s Cube.</li>
+</ul>
+<hr size="20" noshade color="#0c00ff">
+<br><br><br>
+<p style="background-color: #81dde3;
+border: 2px solid gray;">
+Action 1
+</p>
+<p align="left">If the <b>FRONT</b> tile of the UP edge
+piece matches the <b>CENTER</b> tile color, go to <font color="#81dde3"><b>Action 2</b></font>
+on the <font color="#81dde3"><b>STEP 1</b></font>
+</p>
+<p>If not, turn the <b>UP (U)</b> face until it does.</p>
+<p>Then follow the following algorithm</p>
+<img src="pg 15.png" height="300" width="300" align="right">
+<img src="U.png" height="250" width="250">
+<font size="11">OR</font>
+<img src="U'.png" height="250" width="250">
+<hr size="20" noshade color="#0c00ff">
+<br><br><br>
+<p style="background-color: #81dde3;
+border: 2px solid gray;">
+Action 2
+</p>
+<p align="left">
+Turn the <b>FRONT</b> face two times
+<b>(F2)</b><br> so that the <b>WHITE</b> tile is now
+on the<br> <b>DOWN (D)</b> face.<br><br></p>
+<img src="pg 16.1.png" height="300" width="300" align="right">
+<img src="F.png" height="150" width="150">
+<img src="F.png" height="150" width="150">
+<hr size="20" noshade color="#0c00ff">
+<br><br><br>
+<p style="background-color: #81dde3;
+border: 2px solid gray;">
+Action 3
+</p>
+<p align="left">
+Repeat <font color="#81dde3"><b>Action 1 & 2</b></font> for each <b>WHITE</b> edge.
+</p>
+<hr size="20" noshade color="#0c00ff">
+<p style="background-color: #81dde3;
+border: 2px solid gray;">
+Action 4
+</p>
+<p align="left">
+Once all 4 edges have been correctly placed, flip
+your Rubik’s Cube over to see the WHITE cross
+(with matching edge tiles on the <font color="red"><b>RED</b></font>, <font color="blue"><b>BLUE</b></font>,
+<font color="orange"><b>ORANGE</b></font> and <font color="green"><b>GREEN</b></font> faces).
+</p>
+<br><br>
+<p style="background-color: #81dde3;
+border: 2px solid gray;">
+<br>
+When your Rubik’s Cube has a
+white cross with the center and
+edge pieces matched, like the 
+following animation, you can 
+move to Step 3!
+<br><br>
+</p>
+<center><div class="wrapper">
+<div class="cube-box">
+<img src="edge-blue-one.png" height="300" width="350">
+<img src="edge-orange-one.png" height="300" width="350">
+<img src="edge-green-one.png" height="300" width="350">
+<img src="edge-red-one.png" height="300" width="350">
+<img src="pg 22-yellow face.png" height="300" width="350">
+<img src="correct white cross.png" height="300" width="350">
+</div>
+</div></center><br><br><br><br>
+<hr noshade size="20" color="#0c00ff">
+<br><br><br>
+<p style="background-color: #0d00ff;
+border: 2px solid gray;" align="left"><font face="gadugi" size="10"><strong> SOLVE LAYER ONE</strong></font></p><br>
+<p style="background-color: #604bf9;
+border: 2px solid gray;" align="left"><font face="showcard gothic" size="10"></font>STEP 3 : SOLVE THE WHITE CORNERS</font></p>
+<ul type="disc">
+<li><font size="6">Holding your Rubik’s Cube with the White Cross on the <b>UP (U)</b> face. Look at the <b>FRONT</b> face of the Rubik’s Cube.</font></li>
+</ul>
+<p align="left"><b>CORRECT PLACEMENT</b>
+<img src="pg 17.png" height="300" width="300" align="right"></p>
+<p align="left">The correct placement of a corner piece<br>
+is between center pieces with the same<br>
+colors. Notice on the image how a red/<br>
+blue/white corner goes between the red,<br>
+blue, and white center pieces.<br>
+</p>
+<hr size="20" noshade color="#0c00ff">
+<br><br><br>
+<p style="background-color: #81dde3;
+border: 2px solid gray;">
+    Action 1
+</p>
+<p align="left">
+Locate a corner piece with a WHITE tile<br>
+in the bottom layer.
+</p>
+<p align="left">
+If your corner piece is in any of these<br>
+positions then go to Action 2.
+</p>
+<p align="left">
+<img src="pg 18.1.png" height="300" width="300" align="justify">
+<img src="pg 18.2.png" height="300" width="300" align="justify">
+</p>
+<p align="left">
+<img src="pg 18.3.png" height="300" width="300"><br>
+<img src="pg 18.4.png" height="300" width="300" align="right">
+<p align="left">
+<i>If your corner piece is in the
+top layer<br> but not in the correct (as shown in the<br> right figure)
+location then see the tip below.</i>
+</p>
+<br><br><br>
+<hr noshade width="600px" height="100px" align="center">
+<br>
+<br>
+<br>
+<p align="left">
+<img src="pg 18.5.png" height="300" width="300" align="right">
+<h3 align="left"><font color="#36e700">TIP</font></h3><br>
+To get a corner with a
+white tile from<br> the top
+layer to the bottom
+layer,<br> follow the following algorithm:
+</p>
+<p align="left">
+<img src="R'.png" height="150" width="150" align="justify">
+<img src="D'.png" height="150" width="150" align="justify">
+<img src="R.png" height="150" width="150" align="justify">
+<p align="right">
+<i>
+NOTE: Front Face will be<br> that face where red tile is.
+</i>
+</p>
+<br><br>
+<font size="6" face="gadugi" color="#000000">
+<hr size="20" noshade color="#0c00ff">
+<br><br><br>
+<p style="background-color: #81dde3;
+border: 2px solid gray;">
+Action 2
+</p>
+<br>
+<p align="left">
+<img src="pg 19.1.png" height="300" width="300" align="right">
+Rotate the DOWN (D) face until
+the corner is between the two
+matching colored center tiles.
+</p>
+<p align="left">
+<i>
+See ‘Correct Placement’ note in step 1 and images below.
+</i>
+</p>
+<p align="left">
+<img src="D.png" height="150" width="150" align="left">
+<br>
+<br><br><br>
+<img src="pg 19.2.png" height="300" width="300" align="justify">
+<font size="12">OR</font>
+<img src="pg 19.3.png" height="300" width="300" align="justify">
+<font size="12">OR</font>
+<img src="pg 19.4.png" height="300" width="300" align="justify">
+</p>
+<p align="left">
+NOTE: Front face will be that face where the red center tile is present.
+</p>
+<hr size="20" noshade color="#0c00ff">
+<br><br><br>
+<p style="background-color: #81dde3;
+border: 2px solid gray;">
+Action 3
+</p>
+<p align="left">
+<img src="pg 19.2.png" height="300" width="300" align="right">
+<br><br>
+Keeping the white cross on the
+UP (U)<br> face, hold your Rubik’s
+Cube so the<br> WHITE tile is on the
+FRONT face.
+</p>
+<p align="left"><i>
+If the WHITE tile is on the bottom,
+see the tip below.
+</i></p>
+<hr noshade width="600px" height="100px" align="center">
+<h3 align="left"><font color="#36e700">TIP</font></h3><br>
+<p align="left">To change a White tile
+from facing<br> down to
+facing front:</p><br>
+<img src="pg 19.4.png" height="300" width="350" align="right">
+<ol type="1" start="1">
+ <li>Hold your Rubik’s Cube
+ with the<br> corner
+ on the <b>RIGHT</b> face.</li><br>
+ <li>Follow this algorithm.</li>
+</ol>
+ <br><br>
+ <img src="F.png" height="150" width="150" align="justify">
+ <img src="D'.png" height="150" width="150" align="justify">
+ <img src="F'.png" height="150" width="150" align="justify">
+ <img src="2.png" height="150" width="150" align="justify">
+ <br><br>
+ <font color="blue" size="9">
+     If the <b>WHITE</b> tile is on the <B>LEFT</B>.
+ </font>
+ <img src="pg 21.1.png" height="300" width="400" align="right">
+ <p align="left">
+ Front face will be the Center Blue for the following algorithm.</p><br><br><br>
+ <p>
+ <img src="D.png" height="150" width="150" align="justify">
+ <img src="L.png" height="150" width="150" align="justify">
+ <img src="D'.png" height="150" width="150" align="justify">
+ <img src="L'.png" height="150" width="150" align="justify">
+ </p>
+ <p align="left">
+     <b>Notice:</b> D moves the corner piece out of<br> the way,
+     L brings its corner position down,<br> D’ moves it into
+     place and then L’ brings it<br> up to the top layer.
+     <br><br>
+ <font color="blue" size="9">
+     If the <b>WHITE</b> tile is on the <B>RIGHT</B>.
+ </font><br>
+ <img src="pg 19.2.png" height="300" width="300" align="right"><font size="6">
+ <p align="left">
+ <b>Note: </b>Front face will be that face where the white tile is present.
+ </p>
+ <p align="left">
+     Follow this a algorithm.
+ </p>
+ <img src="D'.png" height="150" width="150" align="justify">
+ <img src="R'.png" height="150" width="150" align="justify">
+ <img src="D.png" height="150" width="150" align="justify">
+ <img src="R.png" height="150" width="150" align="justify">
+ <br><br><br>
+ <b>NOTICE: </b> D’ moves the corner piece out of the way,<br>
+ R’ brings its corner position down, D moves it into<br>
+ place and then R brings it up to the top layer.
+ <hr size="20" noshade color="#0c00ff">
+<br><br><br>
+<p style="background-color: #81dde3;
+border: 2px solid gray;">
+Action 5
+</p>
+<p align="left">
+Continue <font color="#81dde3"><b>Actions 1-4</b></font> on the previous page until<nr> all white corner pieces are
+in the correct positions.
+</p>
+<br><br>
+<p style="background-color: #81dde3;
+border: 2px solid gray;">
+<br><br>
+When your Rubik’s Cube looks
+like the animation here, you have
+one-third solved and you
+can now learn to solve the
+middle layer!
+<br><br><br>
+<center><div class="wrapper">
+<div class="cube-box">
+<img src="pg 22-blue face.png" height="300" width="350">
+<img src="pg 22-orange face.png" height="300" width="350">
+<img src="pg 22-green face.png" height="300" width="350">
+<img src="pg 22-red face.png" height="300" width="350">
+<img src="pg 22-yellow face.png" height="300" width="350"><img src="pg 22-white face.png" height="300" width="350">
+</div>
+</div></center><br><br><br><br>
+</p>
+<p style="background-color: #ff0018;
+border: 2px solid gray;" align="left">
+<font size="10"><b><strong> SOLVE THE MIDDLE LAYER</strong></b></font>
+</p>
+<br><br>
+<p style="background-color: #ff0018;
+border: 2px solid gray;">
+Holding Your Rubik's Cube.</p>
+<p align="left">
+Flip your Rubik’s Cube over so
+the completed<br> <b>WHITE</b> face is
+the <b>DOWN</b> face.
+</p>
+<hr noshade size="20" color="#ff0018">
+<br><br>
+<p style="background-color: #ff0018;
+border: 2px solid gray;">
+Action 1
+</p>
+<p align="left">
+Choose a <b>FRONT</b> face. Rotate the <b>UP (U)</b> face<br> to create a vertical line matching one of the<br> pictures below.
+</p>
+<br><br>
+<img src="pg 23.1.png" height="250" width="250">
+<img src="pg 23.2.png" height="250" width="250">
+<img src="pg 23.4.png" height="250" width="250">
+<img src="pg 23.3.png" height="250" width="250">
+<br>
+<img src="pg 23.5.png" height="250" width="250">
+<img src="pg 23.6.png" height="250" width="250">
+<img src="pg 23.7.png" height="250" width="250">
+<img src="pg 23.8.png" height="250" width="250">
+<p align="center">FRONT FACES</p>
+<p align="left">
+    If you can’t match one of these pictures, pick another
+    <b>FRONT</b> face until you can match one of the pictures.
+</p>
+<p align="left">
+    <i>If you can’t make any vertical
+    lines, see tip below.</i>
 
-    <div class="ui__background"></div>
-
-    <div class="ui__game"></div>
-
-    <div class="ui__texts">
-      <h1 class="text text--title">
-        <span>THE</span>
-        <span>CUBE</span>
-      </h1>
-      <div class="text text--note">
-        Double tap to start
-      </div>
-      <div class="text text--timer">
-        0:00
-      </div>
-      <div class="text text--complete">
-        <span>Complete!</span>
-      </div>
-      <div class="text text--best-time">
-        <icon trophy></icon>
-        <span>Best Time!</span>
-      </div>
-    </div>
-
-    <div class="ui__prefs">
-      <range name="size" title="Cube Size" list="2,3,4,5"></range>
-      <range name="flip" title="Flip Type" list="Swift&nbsp;,Smooth,Bounce"></range>
-      <range name="scramble" title="Scramble Length" list="20,25,30"></range>
-      <range name="fov" title="Camera Angle" list="Ortographic,Perspective"></range>
-      <range name="theme" title="Color Scheme" list="Cube,Erno,Dust,Camo,Rain"></range>
-    </div>
-
-    <div class="ui__theme">
-      <range name="hue" title="Hue" color></range>
-      <range name="saturation" title="Saturation" color></range>
-      <range name="lightness" title="Lightness" color></range>
-    </div>
-
-    <div class="ui__stats">
-      <div class="stats" name="cube-size">
-        <i>Cube:</i><b>3x3x3</b>
-      </div>
-      <div class="stats" name="total-solves">
-        <i>Total solves:</i><b>-</b>
-      </div>
-      <div class="stats" name="best-time">
-        <i>Best time:</i><b>-</b>
-      </div>
-      <div class="stats" name="worst-time">
-        <i>Worst time:</i><b>-</b>
-      </div>
-      <div class="stats" name="average-5">
-        <i>Average of 5:</i><b>-</b>
-      </div>
-      <div class="stats" name="average-12">
-        <i>Average of 12:</i><b>-</b>
-      </div>
-      <div class="stats" name="average-25">
-        <i>Average of 25:</i><b>-</b>
-      </div>
-    </div>
-
-    <div class="ui__buttons">
-      <button class="btn btn--bl btn--stats">
-        <icon trophy></icon>
-      </button>
-      <button class="btn btn--br btn--prefs">
-        <icon settings></icon>
-      </button>
-      <button class="btn btn--bl btn--back">
-        <icon back></icon>
-      </button>
-      <button class="btn btn--br btn--theme">
-        <icon theme></icon>
-      </button>
-      <button class="btn btn--br btn--reset">
-        <icon reset></icon>
-      </button>
-    </div>
-
-  </div>
-
-  <script src="assets/js/three.js"></script>
-  <script src="assets/js/cube.js"></script>
-
-  <script src="upup.min.js"></script>
-  <script>
-    if (UpUp !== null) {
-      UpUp.start({
-        'cache-version': window.gameVersion,
-        'content-url': 'index.html',
-        'assets': [ 'assets/css/styles.css', 'assets/js/three.js', 'assets/js/cube.js' ]
-      });
-    }
-  </script>
-
+</p>
+<hr noshade width="600px" height="100px" align="center">
+<h3 align="left"><font color="#36e700">TIP</font></h3><br>
+<img src="pg 24.png" height="300" width="300" align="right">
+<p align="left">
+    If you can’t make a vertical
+    line to match a picture above:
+ </p>
+ <p align="left">
+    You will need to swap an edge
+    from the UP (U) face with an edge
+    already in the middle layer.
+</p>
+<p align="left">
+    <ul type="square">
+        <li>Look in the <b>MIDDLE</b> layer to locate a
+        mismatched edge that doesn’t have
+        a yellow tile.</li><br>
+        <li>Hold your Rubik’s Cube so the mismatched
+        edge in the middle layer is on the RIGHT face.</li><br>
+        <li>Follow the algorithm ‘Moving Right’ after in this page.</li><br>
+        <li>Now proceed to <font color="#ff0018"><b>Action 1</b></font> given above.</li>
+    </ul>
+    <hr noshade size="20" color="#ff0018">
+    <br><br><br>
+        <p style="background-color: #ff0018;
+border: 2px solid gray;">
+        Action 2
+        </p>
+        <p align="left">
+            <font color="#ff0018"><b>Moving The Edge To Left</b></font>
+        </p>
+        <p align="left">
+            If you’re moving the edge piece
+            to the left, follow these moves:
+        </p>
+        <img src="pg 25.1.png" height="200" width="250" align="left">
+        <img src="pg 25.2.png" height="200" width="250">
+        <img src="pg 25.3.png" height="200" width="250">
+        <img src="pg 25.4.png" height="200" width="250"><br><br><br>
+        <center>
+        <img src="U'.png" height="150" width="150">
+        <img src="L'.png" height="150" width="150">
+        <img src="U.png" height="150" width="150">
+        <img src="L.png" height="150" width="150"><br>
+        <img src="U.png" height="150" width="150">
+        <img src="F.png" height="150" width="150">
+        <img src="U'.png" height="150" width="150">
+        <img src="F'.png" height="150" width="150">
+        </center>
+        <img src="pg 25.5.png" height="300" width="350" align="right">
+        <p align="left"><i>
+            This algorithm
+            brings the edge
+            piece to the<br> correct
+            position in the
+            middle layer.
+        </i></p>
+        <p align="left">
+            <font color="#ff0018"><b>Moving The Edge To Left</b></font>
+        </p>
+        <p align="left">
+            If you’re moving the edge piece
+            to the right, follow these moves:
+        </p>
+        <img src="pg 26.1.png" height="225" width="250" align="left">
+        <img src="pg 26.2.png" height="225" width="250" align="justify">
+        <img src="pg 26.3.png" height="225" width="250" align="justify">
+        <img src="pg 26.4.png" height="225" width="250" align="justify">
+        <br><br>
+        <center>
+        <img src="U.png" height="150" width="150" align="justify">
+        <img src="R.png" height="150" width="150" align="justify">
+        <img src="U'.png" height="150" width="150" align="justify">
+        <img src="R'.png" height="150" width="150" align="justify">
+        <br>
+        <img src="U'.png" height="150" align="justify" width="150">
+        <img src="F'.png" height="150" width="150" align="justify">
+        <img src="U.png" height="150" width="150" align="justify">
+        <img src="F.png" height="150" width="150" align="justify">
+        <br>
+        </center>
+        <br>
+        <img src="pg 26.5.png" height="300" width="300" align="right">
+        <p align="left"><i>
+            This algorithm
+            brings the edge
+            piece to the<br> correct
+            position in the
+            middle layer.
+        </i></p>
+        <hr noshade size="20" color="#ff0018">
+        <br><br><br>
+        <p style="background-color: #ff0018;
+border: 2px solid gray;">
+        Action 3
+        </p>
+        <br>
+        <p align="left">
+            Continue <font color="#ff0018">Actions 1-2</font> on the
+            previous page until all <b>MIDDLE</b> layer
+            pieces are in the correct positions.
+        </p>
+        <div style="background-color: #ff0018;
+border: 2px solid gray;;
+        color: black;
+        border: 2px solid gray;">
+            When the two bottom layers
+            of your Rubik’s Cube look like
+            under this para's animation, you 
+            can move to solving the third
+            layer. You are two-thirds of 
+            the way done!
+        </div>
+        <center><div class="wrapper">
+ <div class="cube-box">
+<img src="middle-blue.png" height="300" width="350">
+<img src="middle-orange.png" height="300" width="350">
+<img src="middle-green.png" height="300" width="350">
+<img src="middle-red.png" height="300" width="350">
+<img src="middle-yellow.png" height="300" width="350">
+<img src="face-white.png" height="300" width="350">
+</div>
+</div>
+</center><br><br><br><br><br><br><br><br>
+<div style="border: 2px solid gray;background-color: #ff5500;"><font face="gadugi" size="10"><strong> SOLVE THE FINAL LAYER</strong></font>
+</div><br>
+<div style="background-color: #ff5500;
+color: #000000;
+border: 2px solid gray;">
+STEP 1: MAKE A YELLOW CROSS
+</div>
+<br><br><br><br>
+<p style="background-color: #ff5500;
+border: 2px solid gray;">
+Holding Your Rubik's Cube.</p>
+<p align="left">
+	Match your Rubik’s Cube to one of the pictures
+    below. Focus on the <b>YELLOW</b> edges on the <b>UP (U)</b>
+    face only (not corners).
+</p>
+<img src="F 1st.png" height="300" width="300" align="justify">
+<img src="F 2nd.png" height="300" width="300" align="justify">
+<img src="F 3rd.png" height="300" width="300" align="justify">
+<br><br>
+<center>FRONT FACES</center><br><br/>
+<p align="left" style="background-color: #ff5500;
+border: 2px solid gray;">
+	Action 1
+</p>
+<p align="left">
+	Follow this algorithm:
+</p>
+<center>
+<img src="F.png" height="150" width="150">
+<img src="U.png" height="150" width="150">
+<img src="R.png" height="150" width="150">
+<br>
+<img src="U'.png" height="150" width="150">
+<img src="R'.png" height="150" width="150">
+<img src="F'.png" height="150" width="150">
+</center>
+<p align="left" style="background-color: #ff5500;
+border: 2px solid gray;">
+Action 2
+</p>
+<br>
+<p align="left">
+	If the YELLOW Cross is not formed yet, REMATCH
+    your Rubik’s Cube to one of the pictures in the
+    ‘Holding your Rubik’s Cube’ section above and
+    follow the algorithm again.
+    </p>
+<p align="left" style="background-color: #ff5500;
+border: 2px solid gray;">
+	When your Rubik’s Cube looks
+    like the following animation,
+    move on to the next step!
+</p>
+<center><div class="wrapper">
+ <div class="cube-box">
+<img src="middle-blue.png" height="300" width="350">
+<img src="middle-orange.png" height="300" width="350">
+<img src="middle-green.png" height="300" width="350">
+<img src="middle-red.png" height="300" width="350">
+<img src="yellow cross.png" height="300" width="350">
+<img src="face-white.png" height="300" width="350">
+</div>
+</div></center><br><br><br><br>
+<p align="left" style="background-color: #ff5500;
+border: 2px solid gray;">
+	STEP 2: ORIENT THE CORNERS
+</p><br><br><br>
+<p style="background-color: #ff5500;
+border: 2px solid gray;">
+Holding Your Rubik's Cube.</p>
+<p align="left">
+	Hold your Rubik’s Cube so the <b>UP (U)</b> face matches
+    one of the images in the table below.
+</p>
+<ul type="disc">
+<font size="10"><li></font><img src="yellow cross with a yellow corner.png" height="300" width="300" align="left"></li><br><br><br><br><br><br><br>
+<p>FRONT FACE</p><br><br>
+<font size="10"><li></font>
+<img src="edge-yellow.png" height="300" width="300" align="left">
+</li>
+<br><br><br><br><br><br><br>
+<p> TAKE ANY FRONT FACE</p><br><br>
+<font size="10"><li></font>
+<img src="3rd 1st.png" height="300" width="300" align="left">
+<img src="3rd 2nd.png" height="300" width="300" align="justify">
+<img src="3rd 3rd.png" height="300" width="300" align="justify"></li>
+<br>
+<p align="center">TAKE ANY FRONT FACE</p>
+<br><br></ul>
+<p align="left" style="background-color: #ff5500;
+border: 2px solid gray;">
+Action 1</p>
+<br>
+<p align="left">
+	Follow this algorithm:
+</p>
+<center>
+<img src="R.png" height="150" width="150" align="justify">
+<img src="U.png" height="150" width="150" align="justify">
+<img src="R'.png" height="150" width="150" align="justify">
+<img src="U.png" height="150" width="150" align="justify">
+<br>
+<img src="R.png" height="150" width="150" align="justify">
+<img src="U.png" height="150" width="150" align="justify">
+<img src="U.png" height="150" width="150" align="justify">
+<img src="R'.png" height="150" width="150" align="justify">
+</center>
+<p align="left"><b>
+	Notice the RIGHT (R) face turns in opposite
+    directions every other time and the UP (U) face
+    always turns clockwise.
+</b></p>
+<hr color="#ff5500" size="20">
+<br><br>
+<p align="left" style="background-color: #ff5500;
+border: 2px solid gray;">
+	Action 2
+</p>
+<br>
+<p align="left">
+If you do not have all yellow tiles on the
+<b>UP (U)</b> face you will need to <b>REMATCH</b>
+and follow the algorithm. (You may need
+to do this multiple times.)
+</p>
+<p style="background-color: #ff5500;
+border: 2px solid gray;">
+	When your Rubik’s Cube has all
+    the YELLOW on the UP (U) face,
+    like the following animation, move to Step 3!
+</p>
+<center><div class="wrapper">
+ <div class="cube-box">
+<img src="middle-blue.png" height="300" width="350">
+<img src="middle-orange.png" height="300" width="350">
+<img src="middle-green.png" height="300" width="350">
+<img src="middle-red.png" height="300" width="350">
+<img src="face-yellow.png" height="300" width="350">
+<img src="face-white.png" height="300" width="350">
+</div>
+</div></center><br><br><br><br>
+<hr color="#ff5500" size="20">
+<br><br>
+<p align="left" style="background-color: #ff5500;
+border: 2px solid gray;">
+	STEP 3: POSITION THE YELLOW CORNERS
+</p><br><br>
+<p style="background-color: #ff5500;
+border: 2px solid gray;" align="left">
+Holding Your Rubik's Cube.</p>
+<p align="left">
+	Hold your Rubik’s Cube
+    with the <b>YELLOW</b> on the
+    <b>UP (U)</b> face.
+</p>
+<p align="left" style="background-color: #ff5500;
+border: 2px solid gray;">
+	Action 1
+</p>
+<p align="left">
+Twist the <b>UP (U)</b> face until two corners
+are in the correct location. You will know
+they are in the correct location if the
+colored tiles match the center colors.
+</p>
+<img src="correct corner e.g..png" height="300" width="300" align="left">
+<figcaption>CORRECT CORNER EXAMPLE</figcaption>
+<br><br><br><br><br><br>
+<p align="left" style="background-color: #ff5500;
+border: 2px solid gray;">
+	Action 2
+</p>
+<p align="left">
+	Hold your Rubik's Cube so that any two corners of same colour are correctly aligned at the <b>BACK FACE</b> (ignore if it is at wrong side of another colour). If there are no corners correctly aligned, then take any front face.
+</p>
+<p align="left">
+	Now, follow this algorithm:
+</p>
+<center>
+<img src="R'.png" height="150" width="150" align="justify">
+<img src="F.png" height="150" width="150" align="justify">
+<img src="R'.png" height="150" width="150" align="justify">
+<img src="B.png" height="150" width="150" align="justify">
+<img src="B.png" height="150" width="150" align="justify">
+<br>
+<p align="right">
+	<font size="5">(At  the Back Face)</font>
+</p>
+<br><br>
+<img src="R.png" height="150" width="150" align="justify">
+<img src="F'.png" height="150" width="150" align="justify">
+<img src="R'.png" height="150" width="150" align="justify">
+<img src="B.png" height="150" width="150" align="justify">
+<img src="B.png" height="150" width="150" align="justify">
+<p align="right">
+	<font size="5">(At the Back Face)</font>
+</p>
+<br><br>
+<img src="R.png" height="150" width="150" align="justify">
+<img src="R.png" height="150" width="150" align="justify">
+<img src="U'.png" height="150" width="150" align="justify">
+</center>
+<p align="left" style="background-color: #ff5500;
+border: 2px solid gray;">
+	Action 4
+</p>
+<p align="left">
+	If your corners are not correct at this
+    point, again check that if there are two corners which are correctly aligned.
+</p>
+<p style="background-color: #ff5500;
+border: 2px solid gray;" align="left">
+	When your Rubik's Cube looks like the animation, move on to the final step.
+</p>
+<center><div class="wrapper">
+ <div class="cube-box">
+<img src="no edge-blue.png" height="300" width="350">
+<img src="no edge-orange.png" height="300" width="350">
+<img src="no edge-green.png" height="300" width="350">
+<img src="no edge-red.png" height="300" width="350">
+<img src="face-yellow.png" height="300" width="350">
+<img src="face-white.png" height="300" width="350">
+</div>
+</div></center><br><br><br><br>
+<p align="left" style="background-color: #ff5500;
+border: 2px solid gray;">
+	STEP 4: POSITION THE YELLOW EDGES
+</p>
+<br><br>
+<p style="background-color: #ff5500;
+border: 2px solid gray;">
+	HOLDING YOUR RUBIK'S CUBE
+</p>
+<p align="left">
+	Hold your Rubik’s Cube so the
+one face that is a solid color(face in which all colours are present) 
+is the <b>BACK</b>, and the Yellow
+face is the <b>UP (U)</b> face.
+</p>
+<p align="left">
+If no face is a solid color, it
+doesn’t matter which face is
+in the back.
+</p>
+<p style="background-color: #ff5500;
+border: 2px solid gray;">
+	Follow this algorithm up to 3 times to
+    move the unsolved edges <b>CLOCKWISE /
+    TO THE LEFT.</b>
+</p>
+<center>
+<img src="F.png" height="150" width="150" align="justify">
+<img src="F.png" height="150" width="150" align="justify">
+<img src="U.png" height="150" width="150" align="justify">
+<img src="L.png" height="150" width="150" align="justify">
+<img src="R'.png" height="150" width="150" align="justify">
+<img src="F.png" height="150" width="150" align="justify">
+<br>
+<br>
+<img src="F.png" height="150" width="150" align="justify">
+<img src="L'.png" height="150" width="150" align="justify">
+<img src="R.png" height="150" width="150" align="justify">
+<img src="U.png" height="150" width="150" align="justify">
+<img src="F.png" height="150" width="150" align="justify">
+<img src="F.png" height="150" width="150" align="justify">
+<br><br><br>
+<marquee scrollamount="30">
+<font size="20">
+CONGRATULATIONS
+</font>
+</marquee>
+<p align="center">
+	<font size="10" face="showcard gothic">
+		YOU HAVE SOLVED THE RUBIK'S CUBE!
+	</font>
+</p>
+<center><div class="wrapper">
+ <div class="cube-box">
+<img src="face-blue.png" height="300" width="350">
+<img src="face-orange.png" height="300" width="350">
+<img src="face-green.png" height="300" width="350">
+<img src="face_red.png" height="300" width="350">
+<img src="face-white.png" height="300" width="350">
+<img src="face-yellow.png" height="300" width="350">
+</div>
+</div></center>
+<br><br><br><br>
+<a href="/solve-your-rubik.com/
+D:\MOKSH\Rubik's cube\the-cube-master\the-cube-master\hello world.html">Click Here</a>
+ To Play The <b>Game Of Rubik's Cube-The Cube</b>.
+<br><br><br><br><br><br><br>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+<hr noshade>
+<address>
+    <p align="left"><font face="algerian" font size="10">CREATED BY:
+     <a href="mailto:mokshh000@gmail.com">MOKSH</a></font></p>
+</address>
+</address>
 </body>
 </html>
